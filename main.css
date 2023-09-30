@@ -1,0 +1,35 @@
+.headnt {
+    color: #000080;
+    font-size: 1.cap;
+    font-family: Comic Sans MS;
+    text-align: end;
+}
+.linke {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a {
+    background-color: aquamarine;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Comic Sans MS;
+    text-decoration: none; 
+}
+div {
+    margin: 10px;
+}
+.search {
+    text-align: center;
+}
+.search input{
+    background-color: white;
+}
+input{
+    background-color: aquamarine;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Comic Sans MS;
+}
