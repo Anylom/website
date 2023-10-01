@@ -7,19 +7,30 @@
     <body>
     <script async src="main.js"></script>
     <div class="headnt"><h1>Админка</h1></div>
-    <div class="search"><input type="search"><input type="button" value="Найти" id="ewq"></div>
-
+    <div class="search"><input type="search" id="searchGR"><input type="button" value="Найти" id="searchGrBtn"></div>
+    <div id="show"></div>
     <div class="linke">
-        <div><a>ПИ-357БК</a><input type="button" value="Х"></div>
-        <div><a>АТП-125</a><input type="button" value="X"></div>
-        <div><a>ЭО-4234</a><input type="button" value="X"></div>
-        <div><a>КТ-263</a><input type="button" value="X"></div>
-        <div><a>ПИ-357БК</a><input type="button" value="X"></div>
-        <div><a>АТП-125</a><input type="button" value="X"></div>
-        <div><a>ЭО-4234</a><input type="button" value="X"></div>
-        <div><a>КТ-263</a><input type="button" value="X"></div>
+        <div><a>ПИ-357БК</a><input type="button" value="Х" id="GR1"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>АТП-125</a><input type="button" value="X" id="GR2"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>ЭО-4234</a><input type="button" value="X" id="GR3"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>КТ-263</a><input type="button" value="X" id="GR4"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>ПИ-357БК</a><input type="button" value="X" id="GR5"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>АТП-125</a><input type="button" value="X" id="GR6"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>ЭО-4234</a><input type="button" value="X" id="GR7"><input type="button" value="Изменить" id="GR1"></div>
+        <div><a>КТ-263</a><input type="button" value="X" id="GR8"><input type="button" value="Изменить" id="GR1"></div>
     </div>    
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let searchGR = document.getElementById("searchGR");
+        let searchGrBtn = document.getElementById("searchGrBtn");
+        
+        searchGrBtn.addEventListener("click", () => {
+            let val = document.getElementById('searchGR').value;
+            document.getElementById("show").style.display = "block";
+            show.innerHTML=val;
+        })
 
+    </script>
     </body>
 </html> 
