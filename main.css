@@ -8,8 +8,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: yellow;
-
 }
 a {
     border: 2px;
